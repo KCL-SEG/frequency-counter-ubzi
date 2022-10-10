@@ -1,7 +1,9 @@
+from collections import Counter
 """Frequencies function."""
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-    frequencies = {}
-    # Your code goes here
-    return frequencies
+    string_list = []
+    for item in items:
+        string_list.append(str(item))
+    return Counter(string_list)
